@@ -1,0 +1,7 @@
+{
+  "name": "taskmanagementsystemangular",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
