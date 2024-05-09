@@ -1,5 +1,7 @@
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import {
   IonApp,
@@ -49,26 +51,11 @@ import {
     IonIcon,
     IonLabel,
     IonRouterOutlet,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
 })
 export class AppComponent {
-  public appPages = [
-    { title: 'Dashboard', url: '/folder/dashboard', icon: 'apps' },
-    { title: 'Inbox', url: '/folder/inbox', icon: 'mail' },
-    { title: 'Tasks', url: '/folder/tasks', icon: 'checkbox' },
-    { title: 'Logout', url: '/folder/logout', icon: 'log-out' },
-  ];
-
-  constructor() {
-    addIcons({
-      mailOutline,
-      mailSharp,
-      checkboxOutline,
-      checkboxSharp,
-      appsOutline,
-      appsSharp,
-      logOutOutline,
-      logOutSharp,
-    });
-  }
+  constructor() {}
 }
